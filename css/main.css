@@ -1,0 +1,86 @@
+@import url(uno.css);
+@import url(monokai.css);
+
+/* Design system tokens — see ../../design-system/README.md */
+:root {
+  /* Brand */
+  --ds-brand: #6C8CFF;        /* Cornflower (T-60) */
+  --ds-brand-hover: #94A8FF;  /* T-70 */
+  --ds-brand-press: #5470DC;  /* T-50 */
+  --ds-brand-soft: #DCE1FF;   /* T-90 */
+  --ds-brand-container: #28409A; /* T-30 */
+
+  /* Surface stack (dark) */
+  --ds-bg: #0E1116;
+  --ds-surface: #141822;
+  --ds-surface-1: #1B2030;
+  --ds-surface-2: #222840;
+  --ds-on-surface: #E3E5EE;
+  --ds-on-surface-muted: #A8ADBD;
+  --ds-outline: #3A4055;
+  --ds-outline-subtle: #262C3C;
+
+  /* Accents from data-viz palette */
+  --ds-sunflower: #F7C835;
+  --ds-coral: #FC727C;
+
+  /* Fonts */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", Menlo, monospace;
+}
+
+/* Modifications */
+
+pre.highlight,
+.highlight pre {
+  padding: 10px;
+}
+
+.highlight pre code {
+  white-space: pre-wrap;
+}
+
+.btn, 
+.navigation__item a {
+  margin: 5px 0;
+  white-space: nowrap;
+}
+
+.pagination__page-number {
+  display: inline-block;
+  padding: 10px;
+}
+
+.categories a,
+.tags a {
+  border: 1px solid var(--ds-brand);
+  border-radius: 20px;
+  color: var(--ds-brand);
+  display: inline-block;
+  font-size: 12px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+.post-meta__tags {
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.footer__copyright {
+    margin: 0 20px 10px;
+}
+
+.user-image {
+  margin-bottom: 1.2em;
+  position: relative;
+  width: 100px;
+  border-radius:100%;
+  width: 140px;
+  height: 140px;
+  /*-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
+  /*filter: grayscale(100%);*/
+  border: 0;
+}
